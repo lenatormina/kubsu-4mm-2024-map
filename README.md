@@ -6,6 +6,6 @@ Hello World!
 ```bash
 $ git clone
 $ git add .
-$ git cjmmit -m "message"
+$ git commit -m "message"
 $ git push
 ```
