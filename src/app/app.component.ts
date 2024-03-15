@@ -15,12 +15,16 @@ import { latLng, tileLayer } from 'leaflet';
 })
 export class AppComponent {
   title = 'kubsu-4mm-2024-map';
-  
+
   options = {
     layers: [
       tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     ],
-    zoom: 5,
-    center: latLng(46.879966, -121.726909)
+    zoom: 15,
+    center: latLng(45.019487, 39.031094)
   };
+
+  onMapReady(map: L.Map): void {
+    console.log(map);
+  }
 }
